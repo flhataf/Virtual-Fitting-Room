@@ -21,7 +21,7 @@ def gen():
         if frame is None:
             continue
 
-        processed_fram = skeleton(frame)
+        processed_fram,_ = skeleton(frame)
 
         (flag, encodedImage) = cv2.imencode(".jpg", processed_fram)
 
